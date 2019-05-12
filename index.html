@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <section class="clearfix">
-            <h1>Luis Ferreira</h1>
-            <ul>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html">About</a></li>
-            </ul>
-        </section>
-    </header>
-    <main>
-        <h1>About Me</h1>
-        <div class="maincontent clearfix">
-        <img class="profileimage" src="../TurnIN/assets/images/yuanpei-hua-1386443-unsplash.jpg">
-        <p>Welcome!</p>
-        <p>My name is Luis, the oldest of a group of three, I like the color blue, games, and reading.
-            I also like to learn new skills. I'm currently studying Japanese hiragana, and a guitar on my spare time.
-        </p>
-        <p>Feel free to drop by for a chat!</p>
-    </div>
-    </main>
-    <footer>
-        <p class="cprt">Copyright &copy;</p>
-    </footer>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <title>Luis Ferreira | WELCOME</title>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper deep-orange darken-1">
+                    <a href="#!" class="brand-logo right">Luis Ferreira</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="left hide-on-med-and-down">
+                    <li><a href="#" class="aboutMe-button">About me</a></li>
+                    <li><a href="#" class="portfolio-button">Portfolio</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                    <li><a href="#" id="other">Other</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="side-nav deep-orange darken-1 main-nav" id="mobile-demo">
+                <li><h2>Menu</h2></li>
+                <li><a href="#" class="aboutMe-button">About me</a></li>
+                <li><a href="#" class="portfolio-button">Portfolio</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
+                <li><a href="#" id="other">Other</a></li>
+        </ul>
+        <div class="container welcome-panel">
+            <div class="col s12 m4">
+                    <div class="card medium">
+                        <div class="card-image">
+                        <img src="./assets/images/space-background2.jpg">
+                        <span class="card-title black-text">Welcome!</span>
+                        </div>
+                        <div class="card-content">
+                        <p class="flow-text">My name is Luis Ferreira. I'm currently enrolled in a coding bootcamp sponsored by Northwestern University. </p>
+                        </div>
+                        <div class="card-action">
+                        <a href="#">Check out some of my projects</a>
+                        </div>
+                    </div>
+                    </div>
+          </div>
+    <div class="row portfolio-panel hidden">
+        <div class="col s12 m4">
+          <div class="card medium">
+            <div class="card-image">
+              <img src="./assets/images/PokemonGIfMaker.PNG">
+              <span class="card-title black-text">Pokemon Gif Maker</span>
+            </div>
+            <div class="card-content">
+              <p>The Pokemon Gif Maker generates gifs using the Giphy API.</p>
+              <p>Use some of the premade buttons to generate Pokemon Gifs, or create your own!</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/LferA/GifTastic.io">Check out the repo!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card medium">
+              <div class="card-image">
+                <img src="./assets/images/EatDrinkLiveChicago.PNG">
+                <span class="card-title black-text">Project</span>
+              </div>
+              <div class="card-content">
+                <p>Eat, Drink, Live - Chicago is a website created using the OpenWeatherAPI, Zoomato API, and Live events API.</p>
+                <p>Zoomato is used to search for your restaurants, the live API demonstrates events currently in going on in Chicago, and OpenWeather shows the current temperature.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/trilogy-ejl/trilogy-april-project">Check out the repo!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card medium">
+              <div class="card-image">
+                <img src="./assets/images/Psychic-Game.PNG">
+                <span class="card-title black-text">Psychic-Game</span>
+              </div>
+              <div class="card-content">
+                <p>The Psychic-Game page takes your keyboard inputs and compares them against the machine! Test your luck and see if you can beat the machine.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/LferA/psychic-game">Check out the repo!</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./assets/javascript/logic.js"></script>
+    </body>
 </html>
